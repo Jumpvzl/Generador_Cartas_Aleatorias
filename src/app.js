@@ -33,7 +33,6 @@ function generateNumber(){
 
 
 function generateFig(){
-
   let figuraIndex = Math.floor(Math.random() * 4);
   let colorClass = "black";
   switch (figuraIndex) {
@@ -55,17 +54,6 @@ function generateFig(){
       break;
   }
     return {figuraIndex, colorClass};
-
 };
-// Asignar el símbolo y el color al elemento
 cardFigureElement.textContent = figura;
 cardFigureElement.classList.add(colorClass);
-
-
-
-/*
-
-  let figuraIndex = Math.floor(Math.random() * 4);
-  let arrFiguras = ["♦","♥","♣","♠"];
-  let color = figuraIndex < 2 ? "red":"black"
-*/

@@ -6,16 +6,19 @@ body {
 }
 .text-left {
     display: flex;
+    font-size: 75px;
     justify-content: flex-start;
     height: 150px;
 }
 .text-center {
     display: flex;
+    font-size: 75px;
     justify-content: center;
     height: 175px;
 }
 .text-right {
     display: flex;
+    font-size: 75px;
     justify-content: flex-end;
     transform: scaley(-1)
 }
@@ -37,4 +40,6 @@ footer {
     background-color: green; /* Cambia según tu diseño */
     border-top: 1px solid #fff;
     padding: 1rem; /* Ajusta el relleno según tu diseño */
+    font-size: medium;
+    text-align: center;
   }

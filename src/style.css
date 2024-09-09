@@ -37,9 +37,9 @@ body {
     font-size: 2em;
 }
 footer {
-    background-color: green; /* Cambia según tu diseño */
+    background-color: green;
     border-top: 1px solid #fff;
-    padding: 1rem; /* Ajusta el relleno según tu diseño */
+    padding: 1rem;
     font-size: medium;
     text-align: center;
-  }
+}

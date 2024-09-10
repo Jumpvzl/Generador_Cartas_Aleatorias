@@ -1,18 +1,25 @@
+/* eslint-disable */
+import "bootstrap";
+import "./style.css";
+
+import "./assets/img/rigo-baby.jpg";
+import "./assets/img/4geeks.ico";
+
 window.onload = function() {
   //write your code here
-  let left = document.querySelector("#left")
-  let right = document.querySelector("#right")
-  let center = document.querySelector("#center")
+  let left = document.querySelector("#left");
+  let right = document.querySelector("#right");
+  let center = document.querySelector("#center");
 
   let number = generateNumber();
   let { figuraIndex, colorClass } = generateFig();
 
-  center.innerHTML=number
-  left.innerHTML =`<span class="${colorClass}">${figuraIndex}</span>`;
-  right.innerHTML=`<span class="${colorClass}">${figuraIndex}</span>`;
+  center.innerHTML = number;
+  left.innerHTML = `<span class="${colorClass}">${figuraIndex}</span>`;
+  right.innerHTML = `<span class="${colorClass}">${figuraIndex}</span>`;
 };
 
-function generateNumber(){
+function generateNumber() {
   let valor = Math.floor(Math.random() * 13) + 1;
   switch (valor) {
     case 11:
@@ -28,11 +35,10 @@ function generateNumber(){
       valor = "A";
       break;
   }
-    return valor;
-};
+  return valor;
+}
 
-
-function generateFig(){
+function generateFig() {
   let figuraIndex = Math.floor(Math.random() * 4);
   let colorClass = "black";
   switch (figuraIndex) {
@@ -53,5 +59,5 @@ function generateFig(){
       colorClass = "black";
       break;
   }
-    return {figuraIndex, colorClass};
-};
+  return { figuraIndex, colorClass };
+}

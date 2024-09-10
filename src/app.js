@@ -55,5 +55,3 @@ function generateFig(){
   }
     return {figuraIndex, colorClass};
 };
-cardFigureElement.textContent = figura;
-cardFigureElement.classList.add(colorClass);
